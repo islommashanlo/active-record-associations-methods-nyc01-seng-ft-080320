@@ -15,5 +15,6 @@ class Song < ActiveRecord::Base
       self
     else
       self.artist.name = drake.name
+    end
   end
 end
