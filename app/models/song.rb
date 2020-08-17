@@ -13,5 +13,7 @@ class Song < ActiveRecord::Base
     drake = Artist.new(:name "Drake")
     if self.artist.name == drake.name
       self
+    else
+      self.artist.name = drake.name
   end
 end
